@@ -2,6 +2,7 @@ set(SOURCE_FILES
   CMakeLists.txt
 	Renderer.cpp
 	Surface.cpp
+	Texture.cpp
   Window.cpp
   )
 
