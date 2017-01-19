@@ -1,9 +1,9 @@
-#ifndef CURVE_WINDOW_HPP_INC
-#define CURVE_WINDOW_HPP_INC
+#ifndef CURVE_SDL_WINDOW_HPP_INC
+#define CURVE_SDL_WINDOW_HPP_INC
 
-#include <string>
 #include <SDL2/SDL_video.h>
 #include <set>
+#include <string>
 
 namespace curve
 {

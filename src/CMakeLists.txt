@@ -1,7 +1,8 @@
 set(SOURCE_FILES
   CMakeLists.txt
-  Window.cpp
+	Renderer.cpp
 	Surface.cpp
+  Window.cpp
   )
 
 
