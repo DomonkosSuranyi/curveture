@@ -8,11 +8,16 @@ using namespace curve;
 
 Texture::Texture(Renderer* renderer, Surface* surface)
 {
-	m_Texture = SDL_CreateTextureFromSurface(renderer->getHandle(), surface->getHandle());
+    m_Texture = SDL_CreateTextureFromSurface(renderer->getHandle(), surface->getHandle());
 }
 
 Texture::~Texture()
 {
-	SDL_DestroyTexture(m_Texture);
-	m_Texture = nullptr;
+    SDL_DestroyTexture(m_Texture);
+    m_Texture = nullptr;
+
+    if(m_Renderer->getHandle() != nullptr) {
+        SDL_DestroyRenderer(m_Renderer->getHandle());
+    }
+    m_Renderer = nullptr;
 }

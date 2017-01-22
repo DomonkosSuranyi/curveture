@@ -4,21 +4,21 @@
 #include <curve/sdl/Window.hpp>
 #include <SDL2/SDL_video.h>
 
-namespace curve 
+namespace curve
 {
-	class Surface
-	{
-		public:
-			Surface(Window* window);
-			
-//			Surface(const char* bmpPath);
+    class Surface
+    {
+        public:
+            Surface(Window* window);
 
-			~Surface();
+//          Surface(const char* bmpPath);
 
-			SDL_Surface* getHandle() const {return m_Surface;}
+            ~Surface();
 
-		private:
-			SDL_Surface* m_Surface;
-	};
+            SDL_Surface* getHandle() const {return m_Surface;}
+
+        private:
+            SDL_Surface* m_Surface;
+    };
 }
 #endif

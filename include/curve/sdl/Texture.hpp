@@ -4,16 +4,19 @@
 #include <curve/sdl/Renderer.hpp>
 #include <curve/sdl/Surface.hpp>
 
+#include <SDL2/SDL_render.h>
+
 namespace curve
 {
-	class Texture
-	{
-		public:
-			Texture(Renderer* renderer, Surface* surface);
+    class Texture
+    {
+        public:
+            Texture(Renderer* renderer, Surface* surface);
 
-			~Texture();
-		private:
-			SDL_Texture* m_Texture;
-	};
+            ~Texture();
+        private:
+            SDL_Texture* m_Texture;
+            Renderer* m_Renderer;
+    };
 }
 #endif
