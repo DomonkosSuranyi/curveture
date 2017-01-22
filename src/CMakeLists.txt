@@ -1,10 +1,10 @@
 set(SOURCE_FILES
-  CMakeLists.txt
-	Renderer.cpp
-	Surface.cpp
-	Texture.cpp
-  Window.cpp
-  )
+    CMakeLists.txt
+    Renderer.cpp
+    Surface.cpp
+    Texture.cpp
+    Window.cpp
+    )
 
 
 add_library(curve SHARED ${SOURCE_FILES})
