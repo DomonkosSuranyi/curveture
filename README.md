@@ -1,10 +1,11 @@
 Curveture
 =========
 
-*This is a Curve Fever (Achtung Die Kurve) game clone can be played via network
+* This is a game like Curve Fever (aka. Achtung Die Kurve). Curveture is going to have some extra feature, such as playing via network. Just have fun!
 
 Dependencies
 ============
 
-*CMake
-*SDL2
+* cmake
+* make
+* SDL2, SDL2_image
