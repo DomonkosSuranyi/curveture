@@ -28,6 +28,8 @@ namespace curve
 
             void clear();
 
+            void update();
+
             SDL_Renderer* getHandle() const {return m_Renderer;}
 
         private:

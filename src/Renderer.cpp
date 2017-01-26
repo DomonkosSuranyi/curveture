@@ -36,3 +36,8 @@ void Renderer::clear()
 {
     SDL_RenderClear(m_Renderer);
 }
+
+void Renderer::update()
+{
+    SDL_RenderPresent(m_Renderer);
+}
