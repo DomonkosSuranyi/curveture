@@ -1,5 +1,6 @@
 #include <curve/sdl/Window.hpp>
 #include <curve/sdl/Renderer.hpp>
+#include <curve/Color.hpp>
 #include <set>
 
 #include <SDL2/SDL_render.h>
@@ -20,4 +21,18 @@ Renderer::~Renderer()
 {
     SDL_DestroyRenderer(m_Renderer);
     m_Renderer = nullptr;
+}
+
+void Renderer::setDrawColor(Color color)
+{
+    SDL_SetRenderDrawColor(m_Renderer,
+                           color.r,
+                           color.g,
+                           color.b,
+                           color.a);
+}
+
+void Renderer::clear()
+{
+    SDL_RenderClear(m_Renderer);
 }

@@ -10,7 +10,7 @@ namespace curve
         int g;
         int b;
         int a;
-    }
+    };
 
 }
 

@@ -2,6 +2,7 @@
 #define CURVE_SDL_RENDERER_HPP_INC
 
 #include <curve/sdl/Window.hpp>
+#include <curve/Color.hpp>
 
 #include <SDL2/SDL_render.h>
 #include <set>
@@ -23,7 +24,12 @@ namespace curve
 
             ~Renderer();
 
+            void setDrawColor(Color color);
+
+            void clear();
+
             SDL_Renderer* getHandle() const {return m_Renderer;}
+
         private:
             SDL_Renderer* m_Renderer;
     };
