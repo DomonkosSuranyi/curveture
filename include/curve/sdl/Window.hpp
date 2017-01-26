@@ -39,8 +39,15 @@ namespace curve
             ~Window();
             SDL_Window* getHandle() const { return m_Window; }
 
+            int getWidth();
+
+            int getHeight();
+
         private:
             SDL_Window* m_Window;
+
+            int m_width;
+            int m_height;
 
     };
 }

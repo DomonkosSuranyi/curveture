@@ -14,6 +14,8 @@ Window::Window(std::string title, int x, int y, int width, int height, std::set<
     }
 
     m_Window = SDL_CreateWindow(title.c_str(), x, y, width, height, sumFlag);
+    m_width = width;
+    m_height = height;
 }
 
 Window::~Window()
@@ -21,3 +23,7 @@ Window::~Window()
     SDL_DestroyWindow(m_Window);
     m_Window = nullptr;
 }
+
+int Window::getWidth() { return m_width; }
+
+int Window::getHeight() { return m_height; }
